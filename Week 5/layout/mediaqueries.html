@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2 Column Float Layout
+        </title>
+        <style>
+            
+            header {
+                background: pink;
+            }
+            
+            nav {
+                background: yellow;
+            }
+            
+            section {
+                background: blue;
+            }
+            
+            footer {
+                background: red;
+                text-align: center;
+            }
+            
+            /*MediaQueries Layout*/
+            @media screen and (min-width:600px){
+                body {
+                    background: green;
+                }
+                nav {
+                    float: left;
+                    width: 25%;
+                }
+                section {
+                    float: left;
+                    width: 75%;
+                }
+                footer {
+                    clear: both;
+                }
+            }
+            
+             @media screen and (max-width:599px){
+                body {
+                    background: aquamarine;
+                }
+                
+                 nav li {
+                     display: inline;
+                     text-align: center;
+                 }  
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to my website!</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li> 
+            </ul>
+        </nav>
+        <section>
+            <h2>This is a headline</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel rhoncus enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris porta interdum elit, nec mollis elit pretium in. Aliquam quis nisl ac lacus eleifend cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum lorem eget commodo consequat. Donec mauris lectus, ullamcorper quis interdum sit amet, varius eleifend turpis.
+            </p>
+        </section>
+        <footer>
+            <p>&copy; 2017 Web Presence</p>
+        </footer>
+    </body>
+</html>
